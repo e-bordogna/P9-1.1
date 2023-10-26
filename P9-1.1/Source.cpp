@@ -47,3 +47,12 @@ void printNormal(const int* a) {
 	}
 	cout << endl;
 }
+void printEvenIn(const int* a) {
+	cout << "Even indices:         ";
+	const int* p = a;
+	for (int i = 0; i < 5; i++) {
+		cout << *p << " ";
+		p += 2;
+	}
+	cout << endl;
+}
