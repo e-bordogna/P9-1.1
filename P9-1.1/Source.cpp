@@ -77,3 +77,10 @@ void printReverse(const int* a) {
 	}
 	cout << endl;
 }
+void printFirstLast(const int* a) {
+	cout << "First and last:       ";
+	const int* p = a;
+	cout << *p << " ";
+	p = &a[9];
+	cout << *p << endl;
+}
