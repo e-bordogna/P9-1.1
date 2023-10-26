@@ -68,3 +68,12 @@ void printEvenVal(const int* a) {
 	}
 	cout << endl;
 }
+void printReverse(const int* a) {
+	cout << "Reversed order:       ";
+	const int* p = &a[9]; // start by referencing end of array/last digit
+	for (int i = 10; i > 0; i--) {
+		cout << *p << " ";
+		p--;
+	}
+	cout << endl;
+}
