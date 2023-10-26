@@ -56,3 +56,15 @@ void printEvenIn(const int* a) {
 	}
 	cout << endl;
 }
+
+void printEvenVal(const int* a) {
+	cout << "Even values:          ";
+	const int* p = a;
+	for (int i = 0; i < 10; i++) {
+		if (*p % 2 == 0) {
+			cout << *p << " ";
+		}
+		p++;
+	}
+	cout << endl;
+}
